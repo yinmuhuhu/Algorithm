@@ -109,7 +109,7 @@ function nonRpreOrderTree(t) {
     console.log(t.data)      //根节点
     if (t.right) {
       stack.push(t.right)
-    } else if (t.right) {
+    } else if (t.left) {
       t = t.left  //如果该结点的左结点不为空继续向左子树遍历
     } else {
       stack.pop()
